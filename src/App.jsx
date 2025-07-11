@@ -16,17 +16,19 @@ const App = () => {
     <Router>
       <div className="min-h-screen">
         <NavigationBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/solutions" element={<Solutions />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/enterprise" element={<Enterprise />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <main className="min-h-screen">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/enterprise" element={<Enterprise />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
         <div className="bg-white px-4 xl:px-20">
           <Footer />
         </div>

@@ -4,18 +4,31 @@ const HamburgerButton = () => {
   const { btnOpen, setBtnOpen } = useMenuContext();
 
   return (
-    <div className="xl:hidden">
+    <div className="lg:hidden">
       <button
         id="btn"
         onClick={() => setBtnOpen((btn) => !btn)}
         type="button"
-        className={`button ${
+        className={`relative z-50 flex h-8 w-8 flex-col items-center justify-center transition-all duration-300 focus:outline-none ${
           btnOpen ? "open" : ""
-        } hamburger z-50 block focus:outline-none lg:hidden`}
+        }`}
+        aria-label="Toggle menu"
       >
-        <span className="hamburger-top"></span>
-        <span className="hamburger-middle"></span>
-        <span className="hamburger-bottom"></span>
+        <span
+          className={`hamburger-line transition-all duration-300 ${
+            btnOpen ? "translate-y-2 rotate-45" : ""
+          }`}
+        ></span>
+        <span
+          className={`hamburger-line transition-all duration-300 ${
+            btnOpen ? "opacity-0" : ""
+          }`}
+        ></span>
+        <span
+          className={`hamburger-line transition-all duration-300 ${
+            btnOpen ? "-translate-y-2 -rotate-45" : ""
+          }`}
+        ></span>
       </button>
     </div>
   );

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <main className="mt-8 flex flex-col-reverse items-center gap-4 p-8 lg:mt-36 lg:grid lg:grid-cols-2 xl:gap-12 xl:px-20">
+    <main className="mt-8 flex flex-col-reverse items-center gap-4 p-8 lg:mt-16 lg:grid lg:grid-cols-2 xl:gap-12 xl:px-20">
       <div className="flex flex-col gap-4">
         <h1 className="text-center text-xl font-bold leading-snug text-black xl:text-left xl:text-5xl 2xl:text-6xl">
           Transform Your Team&apos;s Productivity with Tasker
