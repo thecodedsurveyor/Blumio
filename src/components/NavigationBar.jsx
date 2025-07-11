@@ -90,6 +90,12 @@ const NavigationBar = () => {
             {/* Right Side Actions */}
             <div className="hidden items-center space-x-4 lg:flex">
               <Link
+                to="/dashboard"
+                className="font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600"
+              >
+                Dashboard
+              </Link>
+              <Link
                 to="/contact"
                 className="font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600"
               >

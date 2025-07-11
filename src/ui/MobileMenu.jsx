@@ -54,6 +54,13 @@ const MobileMenu = () => {
           <div className="mt-8 flex flex-col space-y-4">
             <Link
               onClick={() => setBtnOpen(false)}
+              to="/dashboard"
+              className="py-2 text-lg font-medium text-white transition-colors duration-200 hover:text-blue-300"
+            >
+              Dashboard
+            </Link>
+            <Link
+              onClick={() => setBtnOpen(false)}
               to="/login"
               className="py-2 text-lg font-medium text-white transition-colors duration-200 hover:text-blue-300"
             >
