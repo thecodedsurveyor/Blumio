@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -10,176 +11,172 @@ const Footer = () => {
     <footer className="mt-20 pb-8 text-black">
       <ul className="grid grid-cols-1 gap-8 xl:grid-cols-6 xl:gap-20">
         <li className="items-left col-span-2 flex flex-col justify-start gap-8">
-          <a href="#">
+          <Link to="/">
             <img src="./images/logo.svg" alt="logo" />
-          </a>
+          </Link>
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            praesentium ullam laborum iure esse possimus vitae quidem voluptate!
-            Aspernatur, rerum.
+            Tasker is the modern task management platform that helps teams work
+            better together. From startups to enterprises, we provide the tools
+            you need to stay organized, collaborate effectively, and achieve
+            your goals.
           </p>
 
           <div className="flex items-center gap-4">
-            <a href="#" className="rounded-full bg-blue-500 p-2 text-white">
+            <a
+              href="#"
+              className="rounded-full bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" className="rounded-full bg-blue-500 p-2 text-white">
+            <a
+              href="#"
+              className="rounded-full bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600"
+            >
               <FaGoogle />
             </a>
-            <a href="#" className="rounded-full bg-blue-500 p-2 text-white">
+            <a
+              href="#"
+              className="rounded-full bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600"
+            >
               <FaLinkedinIn />
             </a>
-            <a href="#" className="rounded-full bg-blue-500 p-2 text-white">
+            <a
+              href="#"
+              className="rounded-full bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600"
+            >
               <FaInstagram />
             </a>
-            <a href="#" className="rounded-full bg-blue-500 p-2 text-white">
+            <a
+              href="#"
+              className="rounded-full bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600"
+            >
               <FaXTwitter />
             </a>
           </div>
         </li>
         <li className="flex flex-col gap-4">
-          <h3 className="text-2xl font-bold text-black">Tasker</h3>
+          <h3 className="text-2xl font-bold text-black">Product</h3>
 
-          <a className="transition-all hover:text-blue-500" href="#">
+          <Link className="transition-all hover:text-blue-500" to="/">
             Home
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Product
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            What's New
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/products">
+            Features
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/pricing">
             Pricing
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Premium
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Business
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/enterprise">
             Enterprise
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Customer Success
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Asana Templates
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Trust Security
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Status
-          </a>
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Integrations
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Mobile Apps
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            API
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/about">
+            Security
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Updates
+          </Link>
         </li>
         <li className="flex flex-col gap-4">
           <h3 className="text-2xl font-bold text-black">Solutions</h3>
 
-          <a className="transition-all hover:text-blue-500" href="#">
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
             Enterprise
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Small business
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Personal use
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Remote work
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Small Business
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Personal Use
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Remote Work
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
             Startups
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Eduction
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Education
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
             Nonprofits
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Engineering
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Product
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Design
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Managers
-          </a>
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Project Management
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/solutions">
+            Team Collaboration
+          </Link>
         </li>
         <li className="flex flex-col gap-4">
-          <h3 className="text-2xl font-bold text-black">Download</h3>
+          <h3 className="text-2xl font-bold text-black">Resources</h3>
 
-          <a className="transition-all hover:text-blue-500" href="#">
-            IOS & Android
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Mac & Windows
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Web Clipper
-          </a>
-          <h3 className="font-bold text-black">Build</h3>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Integrations
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Help Center
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Tutorials
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
             Templates
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            API docs
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Guides & tutorial
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Find a consultant
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Become an affiliate
-          </a>
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Guides
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Webinars
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Case Studies
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/resources">
+            Best Practices
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/contact">
+            Community Forum
+          </Link>
         </li>
         <li className="flex flex-col gap-4">
-          <h3 className="text-2xl font-bold text-black">Get Started</h3>
+          <h3 className="text-2xl font-bold text-black">Company</h3>
 
-          <a className="transition-all hover:text-blue-500" href="#">
-            Switch from Confluence
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Switch from Asana
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Switch from Evernote
-          </a>
-          <h3 className="font-bold text-black">Resources</h3>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Pricing
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            About us
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
+          <Link className="transition-all hover:text-blue-500" to="/about">
+            About Us
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/about">
             Careers
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/about">
+            News & Press
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/contact">
+            Contact Us
+          </Link>
+          <Link className="transition-all hover:text-blue-500" to="/contact">
+            Support
+          </Link>
+          <a className="transition-all hover:text-blue-500" href="#">
+            Privacy Policy
           </a>
           <a className="transition-all hover:text-blue-500" href="#">
-            Media kit
+            Terms of Service
           </a>
           <a className="transition-all hover:text-blue-500" href="#">
-            Email us{" "}
-          </a>
-          <a className="transition-all hover:text-blue-500" href="#">
-            Cookie settings
+            Cookie Settings
           </a>
         </li>
       </ul>
 
       <p className="mt-24 text-center">
-        &copy; 2023 Tasker, with love by Coded Surveyor
+        &copy; 2024 Tasker, crafted with love by Coded Surveyor
       </p>
     </footer>
   );

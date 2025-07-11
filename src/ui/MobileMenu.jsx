@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useMenuContext } from "../context/MenuContext";
 
 const MobileMenu = () => {
@@ -11,47 +12,47 @@ const MobileMenu = () => {
       } `}
     >
       <div className="flex flex-col items-center justify-start space-y-6 rounded-sm pt-12 font-bold text-white">
-        <a
+        <Link
           onClick={() => setBtnOpen(false)}
-          href="#features"
+          to="/products"
           className="hover:text-softRed w-full border-b border-white pb-2 text-center"
         >
           Products
-        </a>
-        <a
+        </Link>
+        <Link
           onClick={() => setBtnOpen(false)}
-          href="#download"
+          to="/solutions"
           className="hover:text-softRed w-full border-b border-white pb-2 text-center"
         >
           Solutions
-        </a>
-        <a
+        </Link>
+        <Link
           onClick={() => setBtnOpen(false)}
-          href="#faq"
+          to="/resources"
           className="hover:text-softRed w-full border-b border-white pb-2 text-center"
         >
           Resources
-        </a>
-        <a
+        </Link>
+        <Link
           onClick={() => setBtnOpen(false)}
-          href="#faq"
+          to="/enterprise"
           className="hover:text-softRed w-full border-b border-white pb-2 text-center"
         >
-          Enterprises
-        </a>
-        <a
+          Enterprise
+        </Link>
+        <Link
           onClick={() => setBtnOpen(false)}
-          href="#faq"
+          to="/pricing"
           className="hover:text-softRed w-full border-b border-white pb-2 text-center"
         >
           Pricing
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/pricing"
           className="rounded-md bg-blue-500 px-8 py-2 text-white transition-all hover:bg-blue-600"
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HamburgerButton } from "../ui/HamBurgerButton";
 import { MobileMenu } from "../ui/MobileMenu";
 
@@ -5,9 +6,9 @@ const NavigationBar = () => {
   return (
     <>
       <div className="flex px-4 py-4 lg:hidden">
-        <a href="#">
+        <Link to="/">
           <img src="./images/logo.svg" className="w-32" alt="logo" />
-        </a>
+        </Link>
       </div>
       {/* Menu */}
       <div className="absolute right-8 top-8">
@@ -16,34 +17,49 @@ const NavigationBar = () => {
       </div>
       <nav className="container mx-auto hidden w-full items-center gap-12 px-4 lg:flex 2xl:gap-28">
         <ul className="flex items-center gap-14">
-          <a href="#">
+          <Link to="/">
             <img src="./images/logo.svg" alt="logo" />
-          </a>
+          </Link>
           <ul className="flex items-center gap-14">
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/products"
+              >
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/solutions"
+              >
                 Solutions
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/resources"
+              >
                 Resources
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
-                Enterprises
-              </a>
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/enterprise"
+              >
+                Enterprise
+              </Link>
             </li>
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/pricing"
+              >
                 Pricing
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>
@@ -54,22 +70,25 @@ const NavigationBar = () => {
           </li>
           <ul className="flex items-center gap-8">
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link
+                className="transition-all hover:text-blue-500"
+                to="/contact"
+              >
                 Contact Sales
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all hover:text-blue-500" href="#">
+              <Link className="transition-all hover:text-blue-500" to="/login">
                 Login
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/pricing"
                 className="3xl:px-8 rounded-md bg-blue-500 px-4 py-2 text-white transition-all hover:bg-blue-600"
               >
                 Get Started
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>
