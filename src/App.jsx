@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,29 +17,40 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 
-const App = () => {
+const AppContent = () => {
+  const location = useLocation();
+  const isDashboard = location.pathname === "/dashboard";
+
   return (
-    <Router>
-      <div className="min-h-screen">
-        <NavigationBar />
-        <main className="min-h-screen">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/solutions" element={<Solutions />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/enterprise" element={<Enterprise />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
-        </main>
+    <div className="min-h-screen">
+      {!isDashboard && <NavigationBar />}
+      <main className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/enterprise" element={<Enterprise />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </main>
+      {!isDashboard && (
         <div className="bg-white px-4 xl:px-20">
           <Footer />
         </div>
-      </div>
+      )}
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 };
