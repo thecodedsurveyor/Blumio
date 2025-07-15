@@ -142,12 +142,12 @@ const Pricing = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6 text-5xl font-bold md:text-6xl">
+      <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-emerald-600 py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
+          <h1 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
             Simple, Transparent Pricing
           </h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
+          <p className="mx-auto mb-6 max-w-3xl text-base sm:mb-8 sm:text-lg md:text-xl lg:text-2xl">
             Choose the perfect plan for your team. Start free and scale as you
             grow.
           </p>
@@ -186,8 +186,8 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Plans */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
             {plans.map((plan, index) => (
               <div
@@ -280,8 +280,8 @@ const Pricing = () => {
       </section>
 
       {/* Add-ons */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Optional Add-ons
@@ -308,8 +308,8 @@ const Pricing = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-purple-50 to-blue-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Frequently Asked Questions
@@ -343,11 +343,11 @@ const Pricing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-br from-emerald-600 via-blue-600 to-purple-600 py-24 text-white">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
           <h2 className="mb-6 text-4xl font-bold">Ready to Get Started?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl">
-            Join thousands of teams who trust Tasker to manage their projects
+            Join thousands of teams who trust Blumio to manage their projects
             and boost productivity.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">

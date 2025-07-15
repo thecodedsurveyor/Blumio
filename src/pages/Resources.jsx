@@ -18,7 +18,7 @@ const Resources = () => {
       icon: <FaBook className="text-4xl text-blue-600" />,
       title: "Documentation",
       description:
-        "Comprehensive guides and API documentation to help you get the most out of Tasker.",
+        "Comprehensive guides and API documentation to help you get the most out of Blumio.",
       items: [
         "Getting Started Guide",
         "Advanced Features",
@@ -65,7 +65,7 @@ const Resources = () => {
 
   const popularGuides = [
     {
-      title: "Getting Started with Tasker",
+      title: "Getting Started with Blumio",
       description:
         "A complete beginner's guide to setting up your first project and team.",
       readTime: "5 min read",
@@ -91,7 +91,7 @@ const Resources = () => {
     {
       title: "Integrating with Third-party Tools",
       description:
-        "Connect Tasker with your existing tools and workflows seamlessly.",
+        "Connect Blumio with your existing tools and workflows seamlessly.",
       readTime: "10 min read",
       views: "6.8k views",
       category: "Integrations",
@@ -99,7 +99,7 @@ const Resources = () => {
     {
       title: "Project Management Fundamentals",
       description:
-        "Essential project management concepts and how to apply them in Tasker.",
+        "Essential project management concepts and how to apply them in Blumio.",
       readTime: "12 min read",
       views: "20.3k views",
       category: "Project Management",
@@ -107,7 +107,7 @@ const Resources = () => {
     {
       title: "Security and Privacy Guide",
       description:
-        "Understanding Tasker's security features and best practices for data protection.",
+        "Understanding Blumio's security features and best practices for data protection.",
       readTime: "7 min read",
       views: "4.9k views",
       category: "Security",
@@ -117,7 +117,7 @@ const Resources = () => {
   const learningPaths = [
     {
       icon: <FaGraduationCap className="text-3xl text-blue-500" />,
-      title: "Tasker Fundamentals",
+      title: "Blumio Fundamentals",
       description:
         "Master the basics of task management and team collaboration.",
       courses: 6,
@@ -152,7 +152,7 @@ const Resources = () => {
             Resources & Learning
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
-            Everything you need to master Tasker and transform your team's
+            Everything you need to master Blumio and transform your team's
             productivity.
           </p>
           <button className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 text-lg font-semibold text-purple-600 transition-colors hover:bg-gray-100">

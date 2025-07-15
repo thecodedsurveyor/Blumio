@@ -310,7 +310,7 @@ const Enterprise = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-4xl font-bold">Ready to Get Started?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl">
-            Let's discuss how Tasker Enterprise can transform your
+            Let's discuss how Blumio Enterprise can transform your
             organization's productivity.
           </p>
           <div className="mx-auto mb-8 max-w-md rounded-2xl bg-white bg-opacity-10 p-8">

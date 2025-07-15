@@ -94,7 +94,7 @@ const About = () => {
       year: "2019",
       title: "Founded",
       description:
-        "Tasker was founded with the mission to simplify project management for teams of all sizes.",
+        "Blumio was founded with the mission to simplify project management for teams of all sizes.",
     },
     {
       year: "2020",
@@ -112,7 +112,7 @@ const About = () => {
       year: "2022",
       title: "Enterprise Launch",
       description:
-        "Launched Tasker Enterprise with advanced security and compliance features.",
+        "Launched Blumio Enterprise with advanced security and compliance features.",
     },
     {
       year: "2023",
@@ -131,24 +131,26 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6 text-5xl font-bold md:text-6xl">About Tasker</h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
-            We're on a mission to help teams around the world work better
+      <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-emerald-600 py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
+          <h1 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
+            About Blumio
+          </h1>
+          <p className="mx-auto mb-6 max-w-3xl text-base sm:mb-8 sm:text-lg md:text-xl lg:text-2xl">
+            We&apos;re on a mission to help teams around the world work better
             together and achieve extraordinary results.
           </p>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="grid gap-8 md:grid-cols-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-white p-8 text-center shadow-lg"
+                className="rounded-xl border border-gray-100 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <div className="mb-4 flex justify-center text-3xl text-blue-600">
                   {stat.icon}
@@ -164,8 +166,8 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div>
               <h2 className="mb-6 text-4xl font-bold text-gray-800">
@@ -173,7 +175,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 leading-relaxed text-gray-600">
                 <p>
-                  Founded in 2019 by Sarah Johnson and Michael Chen, Tasker was
+                  Founded in 2019 by Sarah Johnson and Michael Chen, Blumio was
                   born out of frustration with existing project management tools
                   that were either too complex for small teams or too simplistic
                   for growing organizations.
@@ -185,8 +187,8 @@ const About = () => {
                   would scale with teams, from startups to enterprises.
                 </p>
                 <p>
-                  Today, Tasker serves over 100,000 teams across 150+ countries,
-                  helping them manage millions of tasks and projects. We're
+                  Today, Blumio serves over 100,000 teams across 150+ countries,
+                  helping them manage millions of tasks and projects. We&apos;re
                   proud to be trusted by organizations ranging from innovative
                   startups to Fortune 500 companies.
                 </p>
@@ -204,8 +206,8 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-emerald-50 to-blue-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Our Values
@@ -220,7 +222,7 @@ const About = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-white p-8 text-center shadow-lg"
+                className="rounded-xl border border-gray-100 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <div className="mb-6">{value.icon}</div>
                 <h3 className="mb-4 text-xl font-bold text-gray-800">
@@ -236,8 +238,8 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Our Journey
@@ -270,14 +272,14 @@ const About = () => {
       </section>
 
       {/* Team */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Meet Our Leadership Team
             </h2>
             <p className="text-xl text-gray-600">
-              The passionate leaders driving Tasker's vision and growth.
+              The passionate leaders driving Blumio&apos;s vision and growth.
             </p>
           </div>
 
@@ -285,7 +287,7 @@ const About = () => {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-white p-6 text-center shadow-lg"
+                className="rounded-xl border border-gray-100 bg-white p-6 text-center shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-500">
                   <span className="text-2xl font-bold text-white">
@@ -335,12 +337,12 @@ const About = () => {
       </section>
 
       {/* Join Us */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-br from-emerald-600 via-blue-600 to-purple-600 py-24 text-white">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
           <h2 className="mb-6 text-4xl font-bold">Join Our Mission</h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl">
-            We're always looking for talented individuals who share our passion
-            for building great products and helping teams succeed.
+            We&apos;re always looking for talented individuals who share our
+            passion for building great products and helping teams succeed.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <button className="rounded-lg bg-white px-8 py-4 font-semibold text-green-600 transition-colors hover:bg-gray-100">

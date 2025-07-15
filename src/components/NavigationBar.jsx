@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { HamburgerButton } from "../ui/HamBurgerButton";
 import { MobileMenu } from "../ui/MobileMenu";
+import { MenuProvider } from "../context/MenuContext";
+import { FaTasks } from "react-icons/fa";
 
 const NavigationBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,11 +19,25 @@ const NavigationBar = () => {
   }, []);
 
   return (
-    <>
+    <MenuProvider>
       {/* Mobile Header */}
       <div className="flex items-center justify-between bg-white px-4 py-4 shadow-sm lg:hidden">
         <Link to="/">
-          <img src="./images/logo.svg" className="w-32" alt="Tasker logo" />
+          <div className="flex items-center gap-2">
+            <FaTasks className="h-6 w-6 text-blue-600" />
+            <span
+              className="text-xl font-bold text-gray-800"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                background: "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Blumio
+            </span>
+          </div>
         </Link>
         <HamburgerButton />
       </div>
@@ -41,11 +57,22 @@ const NavigationBar = () => {
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
-              <img
-                src="./images/logo.svg"
-                alt="Tasker"
-                className="h-10 w-auto transition-all duration-300"
-              />
+              <div className="flex items-center gap-2 transition-all duration-300">
+                <FaTasks className="h-8 w-8 text-blue-600" />
+                <span
+                  className="text-2xl font-bold text-gray-800"
+                  style={{
+                    fontFamily: "'Poppins', sans-serif",
+                    background:
+                      "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  Blumio
+                </span>
+              </div>
             </Link>
 
             {/* Navigation Links */}
@@ -120,7 +147,7 @@ const NavigationBar = () => {
 
       {/* Spacer for fixed navbar */}
       <div className="hidden h-20 lg:block"></div>
-    </>
+    </MenuProvider>
   );
 };
 

@@ -168,7 +168,7 @@ const Solutions = () => {
             Solutions for Every Team
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
-            Discover how Tasker adapts to your unique needs, whether you're a
+            Discover how Blumio adapts to your unique needs, whether you're a
             startup, enterprise, or anywhere in between.
           </p>
           <button className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 text-lg font-semibold text-green-600 transition-colors hover:bg-gray-100">

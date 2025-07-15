@@ -1,0 +1,87 @@
+{
+  "profile": {
+    "title": "Profile",
+    "personalInfo": "Personal Information",
+    "name": "Name",
+    "email": "Email",
+    "title": "Title",
+    "phone": "Phone",
+    "location": "Location",
+    "website": "Website",
+    "bio": "Bio",
+    "skills": "Skills & Expertise",
+    "socialLinks": "Social Links",
+    "activity": "Activity",
+    "settings": "Settings",
+    "privacy": "Privacy",
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "edit": "Edit Profile",
+    "editMode": "Edit Mode",
+    "viewMode": "View Mode"
+  },
+  "settings": {
+    "notifications": "Notification Preferences",
+    "emailNotifications": "Email Notifications",
+    "pushNotifications": "Push Notifications",
+    "taskReminders": "Task Reminders",
+    "weeklyDigest": "Weekly Digest",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "language": "Language",
+    "timezone": "Timezone",
+    "accessibility": "Accessibility",
+    "performance": "Performance",
+    "security": "Security",
+    "integrations": "Integrations",
+    "saveSettings": "Save Settings",
+    "settingsUpdated": "Settings updated successfully!"
+  },
+  "themes": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "currentPlan": "Current Plan",
+    "manageSubscription": "Manage Subscription",
+    "planFeatures": "Plan Features",
+    "status": {
+      "active": "Active",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "trial": "Trial"
+    },
+    "billingCycle": {
+      "monthly": "monthly",
+      "annual": "annual"
+    },
+    "actions": {
+      "upgradeToPremium": "Upgrade to Premium",
+      "viewAllPlans": "View All Plans",
+      "cancelSubscription": "Cancel Subscription",
+      "reactivateSubscription": "Reactivate Subscription",
+      "changePlan": "Change Plan",
+      "renewEarly": "Renew Early"
+    },
+    "billing": {
+      "started": "Started",
+      "renews": "Renews",
+      "expires": "Expires",
+      "recentBilling": "Recent Billing",
+      "billedOn": "Billed on"
+    },
+    "messages": {
+      "freeUser": "You're currently on the free plan. Upgrade to unlock advanced features and unlimited access.",
+      "noAutoRenew": "Your subscription will not auto-renew",
+      "foreverFree": "Forever free"
+    }
+  }
+}

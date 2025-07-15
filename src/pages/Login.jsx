@@ -68,7 +68,7 @@ const Login = () => {
                 Welcome Back
               </h1>
               <p className="text-lg text-gray-600">
-                Sign in to your Tasker account to continue managing your
+                Sign in to your Blumio account to continue managing your
                 projects.
               </p>
             </div>
@@ -188,7 +188,7 @@ const Login = () => {
                 Everything You Need to Succeed
               </h2>
               <p className="mb-8 text-xl opacity-90">
-                Join over 100,000+ teams who trust Tasker to manage their
+                Join over 100,000+ teams who trust Blumio to manage their
                 projects and boost productivity.
               </p>
 
@@ -226,7 +226,7 @@ const Login = () => {
         {/* Mobile Features (visible on mobile) */}
         <div className="mt-12 rounded-xl bg-white p-6 shadow-lg lg:hidden">
           <h3 className="mb-4 text-xl font-bold text-gray-800">
-            Why Choose Tasker?
+            Why Choose Blumio?
           </h3>
           <div className="space-y-3">
             {features.map((feature, index) => (

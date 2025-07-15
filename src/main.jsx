@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { MenuProvider } from "./context/MenuContext.jsx";
+import "./i18n/i18n.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MenuProvider>
-      <App />
-    </MenuProvider>
+    <App />
   </React.StrictMode>,
 );

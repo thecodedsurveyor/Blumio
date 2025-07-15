@@ -46,7 +46,7 @@ const Contact = () => {
       icon: <FaEnvelope className="text-3xl text-green-600" />,
       title: "Email Support",
       description: "Send us a message anytime",
-      contact: "sales@tasker.com",
+      contact: "sales@blumio.com",
       hours: "Response within 24 hours",
     },
     {
@@ -111,19 +111,21 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-green-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6 text-5xl font-bold md:text-6xl">Get in Touch</h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
+      <section className="bg-gradient-to-br from-blue-600 via-emerald-600 to-purple-600 py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
+          <h1 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
+            Get in Touch
+          </h1>
+          <p className="mx-auto mb-6 max-w-3xl text-base sm:mb-8 sm:text-lg md:text-xl lg:text-2xl">
             Ready to transform your team's productivity? Let's talk about how
-            Tasker can help your organization succeed.
+            Blumio can help your organization succeed.
           </p>
         </div>
       </section>
 
       {/* Contact Methods */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 grid gap-8 md:grid-cols-3">
             {contactMethods.map((method, index) => (
               <div
@@ -146,8 +148,8 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Sales Options */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="grid gap-16 lg:grid-cols-2">
             {/* Contact Form */}
             <div>
@@ -295,8 +297,8 @@ const Contact = () => {
       </section>
 
       {/* Offices */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Our Global Offices
@@ -332,13 +334,13 @@ const Contact = () => {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <FaQuestionCircle className="mx-auto mb-6 text-5xl text-blue-500" />
-          <h2 className="mb-4 text-3xl font-bold text-gray-800">
+      <section className="bg-gradient-to-br from-emerald-600 via-blue-600 to-purple-600 py-24 text-white">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
+          <FaQuestionCircle className="mx-auto mb-6 text-5xl text-white" />
+          <h2 className="mb-4 text-3xl font-bold text-white">
             Need Quick Answers?
           </h2>
-          <p className="mb-8 text-xl text-gray-600">
+          <p className="mb-8 text-xl text-white">
             Check out our comprehensive FAQ section or browse our help
             documentation.
           </p>

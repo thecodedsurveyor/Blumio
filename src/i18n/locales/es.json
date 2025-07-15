@@ -1,0 +1,51 @@
+{
+  "profile": {
+    "title": "Perfil",
+    "personalInfo": "Información Personal",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "title": "Título",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "website": "Sitio Web",
+    "bio": "Biografía",
+    "skills": "Habilidades y Experiencia",
+    "socialLinks": "Enlaces Sociales",
+    "activity": "Actividad",
+    "settings": "Configuración",
+    "privacy": "Privacidad",
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "edit": "Editar Perfil",
+    "editMode": "Modo Edición",
+    "viewMode": "Modo Vista"
+  },
+  "settings": {
+    "notifications": "Preferencias de Notificación",
+    "emailNotifications": "Notificaciones por Email",
+    "pushNotifications": "Notificaciones Push",
+    "taskReminders": "Recordatorios de Tareas",
+    "weeklyDigest": "Resumen Semanal",
+    "appearance": "Apariencia",
+    "theme": "Tema",
+    "language": "Idioma",
+    "timezone": "Zona Horaria",
+    "accessibility": "Accesibilidad",
+    "performance": "Rendimiento",
+    "security": "Seguridad",
+    "integrations": "Integraciones",
+    "saveSettings": "Guardar Configuración",
+    "settingsUpdated": "¡Configuración actualizada exitosamente!"
+  },
+  "themes": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "fr": "Francés",
+    "de": "Alemán"
+  }
+}

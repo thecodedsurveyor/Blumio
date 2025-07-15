@@ -52,7 +52,7 @@ const Products = () => {
 
   const products = [
     {
-      name: "Tasker Free",
+      name: "Blumio Free",
       price: "Free",
       description:
         "Perfect for individuals and small teams getting started with task management.",
@@ -65,7 +65,7 @@ const Products = () => {
       icon: <FaRocket className="text-2xl text-blue-500" />,
     },
     {
-      name: "Tasker Premium",
+      name: "Blumio Premium",
       price: "$10.99/month",
       description:
         "Advanced features for growing teams and businesses that need more power.",
@@ -78,7 +78,7 @@ const Products = () => {
       icon: <FaShieldAlt className="text-gold-500 text-2xl" />,
     },
     {
-      name: "Tasker Enterprise",
+      name: "Blumio Enterprise",
       price: "Custom pricing",
       description:
         "Tailored solutions for large organizations with enterprise-grade security.",
@@ -95,12 +95,12 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6 text-5xl font-bold md:text-6xl">
+      <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-emerald-600 py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
+          <h1 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
             Powerful Tools for Every Team
           </h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
+          <p className="mx-auto mb-6 max-w-3xl text-base sm:mb-8 sm:text-lg md:text-xl lg:text-2xl">
             Transform the way your team works with our comprehensive suite of
             productivity tools designed for modern workplaces.
           </p>
@@ -111,14 +111,14 @@ const Products = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Everything You Need to Succeed
             </h2>
             <p className="mx-auto max-w-2xl text-xl text-gray-600">
-              Discover the powerful features that make Tasker the choice of over
+              Discover the powerful features that make Blumio the choice of over
               100,000+ teams worldwide.
             </p>
           </div>
@@ -127,7 +127,7 @@ const Products = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-white p-8 shadow-lg transition-shadow hover:shadow-xl"
+                className="rounded-xl border border-gray-100 bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <div className="mb-4">{feature.icon}</div>
                 <h3 className="mb-4 text-2xl font-bold text-gray-800">
@@ -143,8 +143,8 @@ const Products = () => {
       </section>
 
       {/* Product Tiers */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-24">
+        <div className="mx-auto w-[80%] max-w-none px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-800">
               Choose Your Plan
@@ -158,7 +158,7 @@ const Products = () => {
             {products.map((product, index) => (
               <div
                 key={index}
-                className="rounded-xl border-2 border-gray-200 bg-gray-50 p-8 transition-colors hover:border-blue-500"
+                className="rounded-xl border-2 border-gray-200 bg-gray-50 p-8 transition-all duration-300 hover:border-blue-500 hover:shadow-lg"
               >
                 <div className="mb-6 text-center">
                   {product.icon}
@@ -190,14 +190,14 @@ const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-900 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-24 text-white">
+        <div className="mx-auto w-[80%] max-w-none px-4 text-center">
           <h2 className="mb-6 text-4xl font-bold">
             Ready to Transform Your Workflow?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl">
             Join thousands of teams who have already revolutionized their
-            productivity with Tasker.
+            productivity with Blumio.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <button className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition-colors hover:bg-blue-700">
